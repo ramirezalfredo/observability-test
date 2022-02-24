@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     # path to the folder with the YAML manifests
-    path: manifests
+    path: manifest
     repoURL: https://github.com/ramirezalfredo/observability-test
     targetRevision: HEAD
   # Sync policy

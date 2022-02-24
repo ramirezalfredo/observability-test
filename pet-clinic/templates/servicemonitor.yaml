@@ -9,7 +9,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: spring-petclinic
+      app.kubernetes.io/name: pet-clinic
   endpoints:
   - port: 8080
     path: /actuator/prometheus

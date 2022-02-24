@@ -16,4 +16,4 @@ spec:
     interval: 15s
   namespaceSelector:
     matchNames:
-    - default
+    - observability

@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: pet-clinic
+  namespace: argocd
+spec:
+  destination:
+    namespace: pet-clinic
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    helm:
+      valueFiles:
+      - values.yaml
+    # path to the folder with the YAML manifests
+    path: pet-clinic
+    repoURL: https://github.com/ramirezalfredo/observability-test
+    targetRevision: HEAD
+  # Sync policy
+  syncPolicy: {}

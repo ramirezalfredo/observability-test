@@ -1,19 +1,19 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: backend-service
+  name: spring-petclinic
   namespace: monitoring
   labels:
-    app: backend
+    app: spring-petclinic
     release: prometheus
 spec:
   selector:
     matchLabels:
-      app: backend
+      app: spring-petclinic
   endpoints:
-  - port: backend
+  - port: 8080
     path: /actuator/prometheus
     interval: 15s
   namespaceSelector:
     matchNames:
-    - default
+    - pet-clinic

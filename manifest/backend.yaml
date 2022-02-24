@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: aramirezg/backend:v1
+        image: aramirezg/backend:v2
         ports:
         - name: backend
           containerPort: 8080

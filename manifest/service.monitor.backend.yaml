@@ -11,7 +11,7 @@ spec:
     matchLabels:
       app: backend
   endpoints:
-  - port: backend
+  - port: http
     path: /metrics
     interval: 15s
   namespaceSelector:

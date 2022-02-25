@@ -31,7 +31,7 @@ spec:
   selector:
     app: backend
   ports:
-    - name: backend
+    - name: http
       port: 80
       targetPort: 8080
   type: ClusterIP
